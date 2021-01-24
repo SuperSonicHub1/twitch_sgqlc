@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "twitch_sgqlc"
+version = "0.1.0"
+description = ""
+authors = ["Kyle Anthony Williams <kyle.anthony.williams2@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+sgqlc = {version = "^12.1", extras = ["requests"]}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
