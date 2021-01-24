@@ -1,5 +1,5 @@
 # twitch_sgqlc
-> A conversion of [Twitch's GraphQL schema](https://github.com/SuperSonicHub1/twitch-graphql-api) to a sgqlc Schema.
+> A conversion of [Twitch's GraphQL schema](https://github.com/SuperSonicHub1/twitch-graphql-api) to a [sgqlc](https://github.com/profusion/sgqlc) Schema.
 
 ## Usage
 > To be created...
