@@ -1,0 +1,4 @@
+#!bin/sh
+
+wget https://github.com/SuperSonicHub1/twitch-graphql-api/raw/master/schema.json -o tmp/schema.json
+poetry run sgqlc-codegen schema  sgqlc-codegen
