@@ -28,14 +28,19 @@ def test_regex(twitch_homepage: str):
 
 
 def test_schema(endpoint: HTTPEndpoint):
-    # Get a user's login
     op = Operation(schema.Query)
-    op.user(login="monstercat").login()
+    
+    user = op.user(login="monstercat")
+    # Get a user's login
+    user.login()
+    # See when a user started a stream
+    user.stream().created_at()
     data = endpoint(op)
 
-    user: schema.Query.user = (op + data).user
+    query: schema.Query = (op + data)
     
-    assert user.login == "monstercat"
+    assert query.user.login == "monstercat"
+    assert query.user.stream.created_at
 
 
 

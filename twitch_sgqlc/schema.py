@@ -2133,7 +2133,7 @@ class TiebreakerLabel(sgqlc.types.Enum):
     __choices__ = ('KILLS', 'BONUS', 'UNKNOWN')
 
 
-Time = sgqlc.types.datetime.Time
+Time = sgqlc.types.datetime.DateTime
 
 class TimeSeriesPeriod(sgqlc.types.Enum):
     __schema__ = schema
