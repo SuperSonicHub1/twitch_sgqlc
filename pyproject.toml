@@ -10,6 +10,8 @@ sgqlc = "^12.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+black = {version = "^20.8b1", allow-prereleases = true}
+mypy = "^0.800"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
